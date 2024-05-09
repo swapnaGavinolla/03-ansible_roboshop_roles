@@ -1,0 +1,4 @@
+- name: installing maven
+  ansible.builtin.dnf:
+    name: maven
+    state: installed
