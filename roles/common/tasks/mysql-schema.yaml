@@ -1,7 +1,7 @@
 - name: install mysql client
-    ansible.builtin.dnf:
-      name: mysql
-      state: present
+  ansible.builtin.dnf:
+    name: mysql
+    state: present
 
-  - name: load {{component}} data
-    ansible.builtin.shell: "mysql -h mysql.sureshvadde.online -uroot -p{{mysql_password}} < /app/schema/{{component}}.sql" 
+- name: load {{component}} data
+  ansible.builtin.shell: "mysql -h mysql.sureshvadde.online -uroot -p{{mysql_password}} < /app/schema/{{component}}.sql" 
