@@ -13,10 +13,10 @@
   args:
     chdir: /app
 
-- name: mongo schema setup
-  ansible.builtin.import_role:
-    name: common
-    tasks_from: mongo-schema
+# - name: mongo schema setup
+#   ansible.builtin.import_role:
+#     name: common
+#     tasks_from: mongo-schema
 
 - name: systemd setup
   ansible.builtin.import_role:
