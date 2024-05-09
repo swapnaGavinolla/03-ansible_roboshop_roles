@@ -8,5 +8,5 @@
     name: mongodb-org-shell
     state: present
     
-- name: load {{component}} data
-  ansible.builtin.command: mongo --host mongodb.sureshvadde.online < /app/schema/{{component}}.js
+- name: "load {{component}} data"
+  ansible.builtin.command: "mongo --host mongodb.sureshvadde.online < /app/schema/{{component}}.js"
